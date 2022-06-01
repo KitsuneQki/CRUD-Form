@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../app/elementos.js" async></script>
+    <script src="../app/estudiante.js" async></script>
+    <script src="../app/copia.js" async></script>
+    <script src="../app/formulario-estudiante.js" async></script>
+    <script src="../app/actualizar.js" async></script>
+    <script src="../app/botones.js" async></script>
+    <script src="../app/index.js" async></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div>
+      <label for="nombre-estudiante">Nombre:</label>
+      <input
+        type="text"
+        id="nombre-estudiante"
+        class="nombre-estudiante"
+      /><br />
+      <label for="apellido-estudiante">Apellido:</label>
+      <input
+        type="text"
+        id="apellido-estudiante"
+        class="apellido-estudiante"
+      /><br />
+      <label for="edad-estudiante">Edad:</label>
+      <input type="text" id="edad-estudiante" class="edad-estudiante" /><br />
+      <label for="fecha-estudiante">Fecha de nacimiento:</label>
+      <input type="text" id="fecha-estudiante" class="fecha-estudiante" /><br />
+      <button id="agregar-estudiante">Agregar</button>
+    </div>
+
+    <div id="formulario-edit" style="display: none">
+      <h1 class="edit-title">Editar estudiante:</h1>
+      <label for="nombre-estudiante-edit">Nombre:</label>
+      <input
+        type="text"
+        id="nombre-estudiante-edit"
+        class="nombre-estudiante-edit"
+      />
+      <label for="apellido-estudiante-edit">Apellido:</label>
+      <input
+        type="text"
+        id="apellido-estudiante-edit"
+        class="apellido-estudiante-edit"
+      />
+      <label for="edad-estudiante-edit">Edad:</label>
+      <input
+        type="text"
+        id="edad-estudiante-edit"
+        class="edad-estudiante-edit"
+      />
+      <label for="fecha-estudiante-edit">Fecha de nacimiento:</label>
+      <input
+        type="text"
+        id="fecha-estudiante-edit"
+        class="fecha-estudiante-edit"
+      />
+      <button id="actualizar-estudiante-edit">Actualizar</button>
+      <button id="cancelar-estudiante-edit">Cancelar</button>
+    </div>
+
+    <div>
+      <h2>Lista de estudiantes:</h2>
+      <ul id="lista-estudiantes"></ul>
+    </div>
+  </body>
+</html>
